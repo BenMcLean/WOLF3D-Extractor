@@ -114,6 +114,9 @@ hs_err_pid*
 WOLF3D/
 Wolfenstein3dV14sw.ZIP
 
+# Program output
+output/
+
 # Exceptions
 !java-vswap.zip
 !typescript-vswap.zip

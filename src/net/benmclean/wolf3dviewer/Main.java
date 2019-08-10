@@ -1,18 +1,15 @@
 package net.benmclean.wolf3dviewer;
 
-import javax.swing.JFrame;
+import com.albert.wolf3d.core.io.file.VswapFileReader;
 
-public class Main extends JFrame {
-    public Main() {
-        setTitle("WOLF3D-Viewer");
-        setSize(300, 200);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-    }
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
+public class Main {
     public static void main(String[] args) throws Exception {
         DownloadShareware.WOLF3DShareware();
-        Main ex = new Main();
-        ex.setVisible(true);
+        if (!Files.exists(Paths.get("output")))
+            Files.createDirectory(Paths.get("output"));
+        VswapFileReader.main(new String[] {"WOLF3D/VSWAP.WL1", "palettes/Wolf3d.pal", "output"});
     }
 }
