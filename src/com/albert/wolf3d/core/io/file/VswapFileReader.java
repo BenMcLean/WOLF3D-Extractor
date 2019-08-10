@@ -166,6 +166,10 @@ public class VswapFileReader {
         return fileData;
     }
 
+    /**
+     * @param args 0 is VSWAP.WL1, 1 is the Wolf3D JASC palette from WDC (the Wolf Data Compiler at http://winwolf3d.dugtrio17.com ), 2 is output folder
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         File file = new File(args[0]);
         VswapFileData data = VswapFileReader.read(file, 64, PaletteFileReader.get().read(new File(args[1])));

@@ -1,12 +1,6 @@
 package net.benmclean.wolf3dviewer;
 
 import javax.swing.JFrame;
-import java.io.*;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 public class Main extends JFrame {
     public Main() {
@@ -21,5 +15,4 @@ public class Main extends JFrame {
         Main ex = new Main();
         ex.setVisible(true);
     }
-
 }
