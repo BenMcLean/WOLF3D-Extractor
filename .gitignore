@@ -110,6 +110,10 @@ hs_err_pid*
 
 # End of https://www.gitignore.io/api/java,intellij
 
+# Downloaded WOLF3D shareware files
+WOLF3D/
+Wolfenstein3dV14sw.ZIP
+
 # Exceptions
 !java-vswap.zip
 !typescript-vswap.zip
