@@ -1,4 +1,4 @@
-package net.benmclean.wolf3dviewer;
+package net.benmclean.wolf3d;
 
 import java.io.*;
 import java.net.URL;
